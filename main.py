@@ -16,10 +16,7 @@ def home():
             result = chardet.detect(data)
         
         with open(path, 'r',encoding=result['encoding']) as file:
-            if end!= -1:
-                lines = file.readlines()[start:end]
-            else:
-                file.readlines()[start:]
+            lines = file.readlines()[start:end] if end != -1 else file.readlines()[start:]
 
         html_content = '<html><body>'
         for line in lines:
