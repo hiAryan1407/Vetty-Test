@@ -1,9 +1,9 @@
-** Technology used : **
+# Technology used : 
 - Python3
 - Flask
 - chardet
 
-** GETTING STARTED : **
+# GETTING STARTED : 
 
 `bash
 pip install -r requirements.txt
